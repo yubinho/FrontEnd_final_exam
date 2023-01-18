@@ -1,0 +1,89 @@
+/* design page */
+
+.portfolio .content{
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.portfolio .content .banner{
+    width: 30%;
+}
+
+.portfolio .content .banner .title{
+    size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.portfolio .content .banner .active{
+    color:#F9C745;
+}
+
+.portfolio .content .banner li{
+    color:#3A3A3A;
+    size: 20px;
+    line-height: 32px;
+}
+
+.portfolio .content .banner .member li:hover{
+    color:#F9C745;
+    cursor: pointer;
+}
+
+.portfolio .content .banner ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.portfolio .content .col{
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width:70%
+}
+
+.portfolio .col li{
+    margin-bottom: 24px;
+    width: 30%;
+}
+
+@media(max-width: 767px){
+    .portfolio .content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5%;
+    }
+
+    .portfolio .content .banner .title{
+        text-align: center;
+    }
+
+    .portfolio .content .banner ul{
+        align-items: center;
+    }
+
+    .portfolio .content .banner .member{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .portfolio .content .banner{
+        width: 100%;
+    }
+
+    .portfolio .content .col{
+        width:100%
+    }
+
+    .portfolio .col li{
+        margin-bottom: 16px;
+        width: 40%;
+    }
+}
+
+
+
+
